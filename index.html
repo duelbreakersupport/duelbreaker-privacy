@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Politique de confidentialité — Duel Breaker</title>
-<meta name="description" content="Politique de confidentialité de Duel Breaker (com.duelbreaker.game). Aucune donnée personnelle collectée.">
+<meta name="description" content="Politique de confidentialité de Duel Breaker (com.duelbreaker.game).">
 <style>
   :root{
     --ink:#12101c; --paper:#ffffff; --text:#1e1c2b; --dim:#5c5870; --line:#e3e0ea;
-    --accent:#7b3fb8;
+    --accent:#7b3fb8; --warn:#8a4a2a; --warnbg:#fdf3e7;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --paper:#12101c; --text:#eae7f2; --dim:#a09bb2; --line:#2b2740;
-      --accent:#b98cff;
+      --accent:#b98cff; --warn:#e0a373; --warnbg:#2a1d14;
     }
   }
   *{box-sizing:border-box}
@@ -55,68 +55,110 @@
 <body>
 <main>
 
+<!-- ============================================================
+     VERSION CLOUD SEUL, pour la 1.6.0 (code 8) du 22/09/2026.
+
+     Cette page vient de index-v2.html, qui decrivait le cloud ET
+     les publicites recompensees, les deux etant censes arriver
+     dans la meme version. Ils n'y arrivent pas : la 1.6.0 porte
+     la sauvegarde, la publicite n'existe pas encore.
+
+     Tout ce qui concernait la regie a donc ete RETIRE. Annoncer
+     une publicite qui n'existe pas serait exactement la faute que
+     la v2 se gardait de commettre dans l'autre sens.
+
+     Les autorisations listees plus bas ont ete relues DANS LE
+     BUNDLE, pas supposees : le manifeste de DuelBreaker.aab
+     declare INTERNET, ACCESS_NETWORK_STATE, VIBRATE, et PAS AD_ID.
+
+     Le jour ou la publicite arrivera : reprendre la section
+     correspondante de index-v2.html, et verifier a nouveau le
+     manifeste -- AD_ID y apparaitra.
+     ============================================================ -->
+
 <header>
   <h1>Politique de confidentialité</h1>
   <p class="app">Duel Breaker — <code>com.duelbreaker.game</code></p>
-  <p class="date">Dernière mise à jour : 8 septembre 2026</p>
+  <p class="date">Dernière mise à jour : 22 septembre 2026</p>
 </header>
 
 <h2>En résumé</h2>
-<p class="lead">Duel Breaker ne collecte aucune donnée personnelle. L'application ne crée pas
-de compte, ne demande aucune inscription, n'affiche aucune publicité, ne contient aucun achat
-intégré et ne transmet aucune information à quiconque — y compris à son auteur.</p>
+<p class="lead">Duel Breaker ne demande ni compte obligatoire, ni inscription, ne contient
+aucun achat intégré et n'affiche aucune publicité. Une seule fonction fait sortir des
+données de votre appareil, et elle est facultative : la <strong>sauvegarde de votre
+progression</strong>, si vous choisissez de vous connecter à Google Play Jeux.</p>
 
-<h2>Ce qui est enregistré, et où</h2>
-<p>Duel Breaker enregistre votre progression <strong>uniquement sur votre appareil</strong>,
-dans l'espace de stockage privé de l'application. Cela comprend :</p>
+<h2>Ce qui reste sur votre appareil</h2>
+<p>Par défaut, et si vous ne vous connectez pas, Duel Breaker enregistre votre progression
+<strong>uniquement sur votre appareil</strong> :</p>
 <ul>
   <li>votre progression dans l'aventure : niveaux terminés et étoiles obtenues ;</li>
-  <li>votre profil de jeu : nom affiché local, niveau d'expérience, trophées, série de
-      victoires, apparence de l'avatar ;</li>
+  <li>votre profil de jeu : nom affiché local, expérience, trophées, série de victoires,
+      apparence de l'avatar, apparences débloquées ;</li>
   <li>vos réglages : difficulté, son, musique, vibration, effets réduits, compteur
       d'images.</li>
 </ul>
-<p>Ces informations ne quittent jamais votre appareil. Elles ne sont ni transmises, ni
-sauvegardées en ligne, ni consultables par l'auteur de l'application. Elles sont
-intégralement supprimées lorsque vous désinstallez Duel Breaker ou effacez les données de
-l'application depuis les réglages Android.</p>
+
+<h2>La sauvegarde dans le cloud — facultative</h2>
+<p>Si vous vous connectez à <strong>Google Play Jeux</strong>, votre progression est
+sauvegardée sur votre compte Google afin de la retrouver sur vos autres appareils.</p>
+<ul>
+  <li><strong>Ce qui est envoyé</strong> : le contenu décrit ci-dessus — progression,
+      profil de jeu, apparences. Rien d'autre.</li>
+  <li><strong>Qui la détient</strong> : Google, sur votre propre compte. L'auteur de
+      l'application n'y a pas accès et ne peut pas la consulter.</li>
+  <li><strong>Votre identité</strong> : la connexion fournit à l'application un identifiant
+      de joueur Google Play Jeux. Elle ne transmet ni votre adresse e-mail, ni votre nom
+      réel, ni vos contacts.</li>
+  <li><strong>Si vous refusez</strong> : le jeu fonctionne entièrement, hors ligne, sans
+      aucune limitation. La connexion n'est jamais exigée.</li>
+  <li><strong>Pour l'effacer</strong> : la sauvegarde se supprime depuis l'application
+      Google Play Jeux, dans les paramètres de votre compte, rubrique des parties
+      enregistrées.</li>
+</ul>
 
 <h2>Ce qui n'est pas collecté</h2>
 <p>Duel Breaker ne collecte, ne stocke ni ne transmet :</p>
 <ul>
-  <li>aucune donnée d'identification (nom réel, adresse e-mail, téléphone) ;</li>
-  <li>aucun identifiant publicitaire, aucun identifiant d'appareil ;</li>
-  <li>aucune donnée de localisation ;</li>
+  <li>aucun nom réel, aucune adresse e-mail, aucun numéro de téléphone ;</li>
+  <li>aucune donnée de localisation précise ;</li>
   <li>aucune donnée de contact, photo, fichier ou microphone ;</li>
-  <li>aucune statistique d'utilisation, aucun rapport d'incident, aucune donnée
-      analytique.</li>
+  <li><strong>aucun identifiant publicitaire, aucun identifiant d'appareil</strong> ;</li>
+  <li>aucun enregistrement de vos parties à des fins d'analyse.</li>
 </ul>
+<p>Duel Breaker <strong>n'affiche aucune publicité</strong>, d'aucune sorte, et n'intègre
+aucune régie publicitaire.</p>
 
 <h2>Services tiers</h2>
-<p>Aucun. Duel Breaker n'intègre aucun kit de développement tiers : ni régie publicitaire,
-ni outil de mesure d'audience, ni service de jeu en ligne, ni réseau social, ni service
-d'authentification.</p>
+<p>Un seul, et seulement lorsque vous le sollicitez :</p>
+<ul>
+  <li><strong>Google Play Jeux</strong> — connexion et sauvegarde de la progression.</li>
+</ul>
+<p>Ses pratiques sont régies par la politique de confidentialité de Google.</p>
 
 <h2>Autorisations Android</h2>
-<p>L'application déclare deux autorisations :</p>
+<p>Elles sont au nombre de trois, relevées dans le fichier publié :</p>
 <ul>
+  <li><code>INTERNET</code> — nécessaire à la sauvegarde dans le cloud. Sans connexion,
+      le jeu fonctionne normalement.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — permet de savoir si une connexion existe avant
+      de tenter une sauvegarde. Aucune donnée n'en sort.</li>
   <li><code>VIBRATE</code> — retour haptique lors des impacts. Désactivable dans les
       réglages du jeu.</li>
-  <li><code>INTERNET</code> — non utilisée. Ajoutée automatiquement par le moteur Unity.
-      L'application n'effectue aucune connexion réseau.</li>
 </ul>
+<p>L'application ne déclare <strong>pas</strong> l'autorisation <code>AD_ID</code>, qui
+donnerait accès à l'identifiant publicitaire.</p>
 
 <h2>Enfants</h2>
-<p>Duel Breaker ne collecte aucune donnée, y compris auprès des enfants. Il ne contient ni
-publicité, ni achat intégré, ni communication entre joueurs, ni contenu généré par les
-utilisateurs.</p>
+<p>Duel Breaker n'est pas destiné aux enfants de moins de 13 ans et ne leur est pas
+adressé. Il ne contient ni achat intégré, ni communication entre joueurs, ni contenu généré
+par les utilisateurs.</p>
 
 <h2>Modifications</h2>
 <p>Toute évolution de cette politique sera publiée à cette adresse, avec une date de mise à
-jour actualisée. Si une version future de Duel Breaker devait collecter des données — par
-exemple pour un mode multijoueur en ligne — cette politique serait modifiée
-<strong>avant</strong> la publication de cette version, et le changement y serait indiqué
-explicitement.</p>
+jour actualisée. Une version de Duel Breaker qui collecterait davantage de données verrait
+cette politique modifiée <strong>avant</strong> sa publication, et le changement y serait
+indiqué explicitement.</p>
 
 <h2>Contact</h2>
 <p>Pour toute question concernant cette politique :
